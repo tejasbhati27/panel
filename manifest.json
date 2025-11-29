@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Safari Style Command Center",
+  "version": "2.0",
+  "description": "A global dashboard overlay with a Safari Start Page aesthetic.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "browsingData"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": [] 
+    }
+  ],
+  "commands": {
+    "toggle-dashboard": {
+      "suggested_key": {
+        "default": "Alt+S",
+        "mac": "Alt+S"
+      },
+      "description": "Toggle Global Command Center"
+    }
+  }
+}

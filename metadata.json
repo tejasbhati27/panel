@@ -1,0 +1,5 @@
+{
+  "name": "Chrome Command Palette",
+  "description": "A Spotlight-like command palette extension for Chrome with shortcut management and browser data clearing.",
+  "requestFramePermissions": []
+}
