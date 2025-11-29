@@ -1,4 +1,3 @@
-// Declare chrome for Service Worker context
 declare var chrome: any;
 
 // Listen for keyboard shortcut triggers
