@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { CommandPalette } from './components/CommandPalette';
 
-declare const chrome: any;
+declare var chrome: any;
 
 // ID for our host element
 const HOST_ID = 'chrome-command-palette-host';

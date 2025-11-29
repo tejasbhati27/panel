@@ -1,4 +1,5 @@
-declare const chrome: any;
+// Declare chrome for Service Worker context
+declare var chrome: any;
 
 // Listen for keyboard shortcut triggers
 chrome.commands.onCommand.addListener((command: string) => {
